@@ -1,7 +1,7 @@
 module.exports = async function (context, req) {
-    var message = "[{\"fogground\": null, \"snowfall\": 0.0, \"dust\": null, \"snowdepth\": 0.0}" \ 
-    ",{\"fogground\": null, \"snowfall\": 0.0, \"dust\": null, \"snowdepth\": 0.0}" \ 
-    ",{\"fogground\": null, \"snowfall\": 0.0, \"dust\": null, \"snowdepth\": 0.0}" \ 
+    var message = "[{fogground: null}" \ 
+    ",{fogground: null}" \ 
+    ",{fogground: null}" \ 
     "]";
     context.res = {
       body: { 

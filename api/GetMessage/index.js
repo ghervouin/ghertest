@@ -8,11 +8,10 @@ module.exports = async function (context, req) {
             context.done(err);
         }
 
-        var result = JSON.parse(data);
         context.log(result.name);
         context.res = {
           body: { 
-            text: result 
+            text: path 
           }
         };
     });

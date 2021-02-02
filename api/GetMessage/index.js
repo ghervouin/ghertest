@@ -1,5 +1,5 @@
 module.exports = async function (context, req) {
-  return {
-        body: "Hello, world!"
-    };
+  context.res = {
+    body: "Hello from the API"
+  };
 };

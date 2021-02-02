@@ -1,5 +1,5 @@
 module.exports = async function (context, req) {
-    const data = "[blablabla";
+    const data = "blablabla";
     
     context.res = {
       body: { 

@@ -1,14 +1,9 @@
-var fs = require('fs');
-fs.readFile( __dirname + '/rdu-weather-history.json', function (err, data) {
-  if (err) {
-    throw err; 
-  }
-});
-
 module.exports = async function (context, req) {
-  context.res = {
-    body: {
-      text: data.toString()
-    }
-  };
+  
+  fs.readFile(__dirname + '/rdu-weather-history.json', function(err, data) {
+        if (err) throw err;
+        fileContent = data;
+        context.res = { body : { name : parts[0].filename, type: parts[0].type, data: fileContent}}; 
+        context.done();  
+    });
 };

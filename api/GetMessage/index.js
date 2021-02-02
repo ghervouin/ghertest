@@ -1,5 +1,8 @@
 module.exports = async function (context, req) {
-    const data = "blablabla";
+    const data = "[{\"fogground\": null, \"snowfall\": 0.0, \"dust\": null, \"snowdepth\": 0.0, \"mist\": \"Present\"}" \ 
+",{\"fogground\": null, \"snowfall\": 0.0, \"dust\": null, \"snowdepth\": 0.0, \"mist\": null}" \ 
+",{\"fogground\": null, \"snowfall\": 0.0, \"dust\": null, \"snowdepth\": 0.0, \"mist\": \"Present\"}" \ 
+"]";
     
     context.res = {
       body: { 

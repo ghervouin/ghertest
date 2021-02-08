@@ -12,9 +12,9 @@ module.exports = async function (context, req) {
 
     context.res = {
       headers: {
-        Cache-Control: "private, no-cache, no-store, must-revalidate"
-        Pragma: "no-cache"
-        Expires: "-1"
+        'Cache-Control': "private, no-cache, no-store, must-revalidate"
+        'Pragma': "no-cache"
+        'Expires': "-1"
       },
       body: { 
         text: data 

@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
 
     context.res = {
       headers: {
-        'Cache-Control': 'private, no-cache, no-store, must-revalidate'
+        'Cache-Control': 'private, no-cache, no-store, must-revalidate',
         'Expires': '-1'
       },
       body: { 

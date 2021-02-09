@@ -4378,6 +4378,10 @@ module.exports = async function (context, req) {
 "{\"fogground\": null, \"snowfall\": 0.0, \"dust\": null, \"snowdepth\": 0.0, \"mist\": null, \"drizzle\": null, \"hail\": null, \"fastest2minwindspeed\": 12.1, \"thunder\": null, \"glaze\": null, \"snow\": null, \"ice\": null, \"fog\": null, \"temperaturemin\": 26, \"fastest5secwindspeed\": null, \"freezingfog\": null, \"temperaturemax\": 49, \"blowingsnow\": null, \"freezingrain\": null, \"rain\": null, \"highwind\": null, \"date\": \"2020-12-19\", \"precipitation\": 0.0, \"fogheavy\": null, \"smokehaze\": null, \"avgwindspeed\": 2.91, \"fastest2minwinddir\": 240, \"fastest5secwinddir\": null}]";
 
     context.res = {
+	  headers: {
+        'Cache-Control': 'private, no-cache, no-store, must-revalidate',
+        'Expires': '-1'
+      },
       body: { 
         text: data 
       }

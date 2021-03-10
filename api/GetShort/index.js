@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
 
     context.res = {
       headers: {
-        'Content-Type': 'application/json; charset=utf-8',
+        'Content-Type': 'application/json',
         'Cache-Control': 'private, no-cache, no-store, must-revalidate',
         'Expires': '-1'
       },
